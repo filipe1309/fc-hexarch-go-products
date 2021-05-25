@@ -7,7 +7,7 @@
 
 ## 💬 About
 
-This project was developed following FullCycle's [Domain Driven Design e Arquotetura Hexagonal](https://portal.code.education/lms/#/180/163/123/conteudos?capitulo=806&conteudo=6971) course.
+This project was developed following FullCycle's [Domain Driven Design e Arquitetura Hexagonal](https://portal.code.education/lms/#/180/163/123/conteudos?capitulo=806&conteudo=6971) course.
 
 ## :computer: Technologies
 
