@@ -38,6 +38,15 @@ docker-compose up
 
 > Access http://localhost:9000
 
+## :white_check_mark: Tests
+
+After up the container:
+
+```sh
+docker-compose exec app bash
+go test ./...
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
