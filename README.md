@@ -11,9 +11,9 @@ This project was developed following FullCycle's [Domain Driven Design e Arquite
 
 ## :computer: Technologies
 
+- [Go](https://golang.org/)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
-- [Go](https://golang.org/)
 
 ## :scroll: Requirements
 
