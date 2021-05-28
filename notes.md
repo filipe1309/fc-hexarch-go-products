@@ -14,3 +14,6 @@ docker exec -it appproduct bash
 go mod init appproduct
 
 go test ./...
+
+docker-compose exec app bash  
+mockgen -destination=application/mocks/application.go -source=application/product.go application
