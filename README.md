@@ -12,6 +12,7 @@ This project was developed following FullCycle's [Domain Driven Design e Arquite
 ## :computer: Technologies
 
 - [Go](https://golang.org/)
+- [SQLite](https://www.sqlite.org/index.html)
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 

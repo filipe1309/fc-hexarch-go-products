@@ -17,3 +17,17 @@ go test ./...
 
 docker-compose exec app bash  
 mockgen -destination=application/mocks/application.go -source=application/product.go application
+
+-> touch sqlite.db
+-> sqlite3 sqlite.db
+
+```sql
+CREATE TABLE products (
+    id STRING,
+    name STRING,
+    price FLOAT,
+    status STRING
+);
+```
+
+.tables
