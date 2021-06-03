@@ -7,13 +7,17 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-type ProdyctDb struct {
+type ProductDb struct {
 	db *sql.DB
 }
 
-func (p *ProdyctDb) Get(id string) (application.ProductInterface, error) {
+func NewProductDb(db *sql.DB) *ProductDb {
+	return &ProductDb{db: db}
+}
+
+func (p *ProductDb) Get(id string) (application.ProductInterface, error) {
 	var product application.Product
-	stmt, err := p.db.Prepare("SELECT  id, name. price, status FROM products WHERE id = ?")
+	stmt, err := p.db.Prepare("SELECT id, name, price, status FROM products WHERE id = ?")
 	if err != nil {
 		return nil, err
 	}
