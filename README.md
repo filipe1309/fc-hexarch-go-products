@@ -44,8 +44,7 @@ docker-compose up
 After up the container:
 
 ```sh
-docker-compose exec app bash
-go test ./...
+docker-compose exec app go test ./...
 ```
 
 ## License
