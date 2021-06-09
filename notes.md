@@ -18,8 +18,8 @@ go test ./...
 docker-compose exec app bash  
 mockgen -destination=application/mocks/application.go -source=application/product.go application
 
--> touch sqlite.db
--> sqlite3 sqlite.db
+-> touch db.sqlite
+-> sqlite3 db.sqlite
 
 ```sql
 CREATE TABLE products (
@@ -28,6 +28,13 @@ CREATE TABLE products (
     price FLOAT,
     status STRING
 );
+.tables
 ```
 
-.tables
+```
+docker-compose exec app go run main.go
+```
+
+```sql
+sqlite> SELECT * FROM products;
+```
