@@ -1,6 +1,7 @@
 package server
 
 import (
+	"appproduct/adapters/web/handler"
 	"appproduct/application"
 	"log"
 	"net/http"
@@ -25,6 +26,9 @@ func (w WebServer) Serve() {
 	n := negroni.New(
 		negroni.NewLogger(),
 	)
+
+	handler.MakeProductHandlers(r, n, w.Service)
+	http.Handle("/", r)
 
 	server := &http.Server{
 		ReadHeaderTimeout: 10 * time.Second,
