@@ -64,3 +64,12 @@ docker-compose exec app sqlite3 db.sqlite
 https://github.com/gorilla/mux
 
 https://github.com/urfave/negroni
+
+docker-compose exec app cobra add http
+sudo chown -R devontherun:devontherun cmd
+
+-> docker-compose exec app go run main.go http
+curl http://localhost:9000/product/2b952214-7151-4776-9db9-f016c945efdc
+
+-> sqlite3 db.sqlite
+sqlite> SELECT \* FROM products;
