@@ -73,3 +73,9 @@ curl http://localhost:9000/product/2b952214-7151-4776-9db9-f016c945efdc
 
 -> sqlite3 db.sqlite
 sqlite> SELECT \* FROM products;
+
+POST http://localhost:9000/product
+{
+"name": "Create Test",
+"Price": 25.99
+}
