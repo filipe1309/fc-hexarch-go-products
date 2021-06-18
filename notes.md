@@ -79,3 +79,5 @@ POST http://localhost:9000/product
 "name": "Create Test",
 "Price": 25.99
 }
+
+GET http://localhost:9000/product/5b16cd45-ded2-41d9-8d31-f182ace891fd/enable
